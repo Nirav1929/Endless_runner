@@ -34,7 +34,7 @@ public class EnvironmentManager : MonoBehaviour
         if (platerTransform.position.z - safeZone> (spawnz - TilesOnScreen * tileLength))
         {
             SpawnTile();
-            //DeleteTile();
+            DeleteTile();
         }
     }
 
