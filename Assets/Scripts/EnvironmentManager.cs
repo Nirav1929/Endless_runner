@@ -8,7 +8,7 @@ public class EnvironmentManager : MonoBehaviour
     public GameObject[] tilePrefabs; 
     private Transform platerTransform;
     private float spawnz = 0.0f;
-    private float tileLength = 10.0f;
+    private float tileLength = 20.0f;
     private int TilesOnScreen = 7;
     private float safeZone = 0.0f;
     private int lastPrefab = 0;
@@ -34,7 +34,7 @@ public class EnvironmentManager : MonoBehaviour
         if (platerTransform.position.z - safeZone> (spawnz - TilesOnScreen * tileLength))
         {
             SpawnTile();
-            DeleteTile();
+            //DeleteTile();
         }
     }
 
