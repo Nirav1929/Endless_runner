@@ -10,6 +10,7 @@ public class PlayerMotor : MonoBehaviour
     private float verticalVelocity = 0.0f;
     private float gravity = 12.0f;
     private float animationDuration = 4.0f;
+    private bool isDead = false;
     
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,9 @@ public class PlayerMotor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDead)
+            return;
+
         if (Time.time < animationDuration)
         {
             controller.Move (Vector3.forward * speed * Time.deltaTime);
@@ -41,5 +45,29 @@ public class PlayerMotor : MonoBehaviour
         // Z - Forward and Backword
         moveVector.z = speed;
         controller.Move(moveVector * Time.deltaTime);
+    }
+
+    public void SetSpeed (float modifier)
+    {
+        speed = 5.0f + modifier;
+    }
+
+    // Called everytime player hits something
+    private void OnControllerColliderHit(ControllerColliderHit hit) {
+        
+        if (hit.moveDirection.z == 1 && hit.point.z > transform.position.z + controller.radius)
+        {
+            Debug.Log("I'm colliding with: " + hit.transform.name);
+            Debug.Log("I impacted at: " + hit.point);
+            Debug.Log(hit.moveDirection);
+            hit.gameObject.transform.position = Vector3.zero;            
+            Death ();
+        }
+    }
+
+    private void Death ()
+    {
+        isDead = true;
+        GetComponent<Score>().OnDeath();
     }
 }
