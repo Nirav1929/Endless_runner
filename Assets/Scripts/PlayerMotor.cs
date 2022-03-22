@@ -11,11 +11,13 @@ public class PlayerMotor : MonoBehaviour
     private float gravity = 12.0f;
     private float animationDuration = 4.0f;
     private bool isDead = false;
+    private float startTime;
     
     // Start is called before the first frame update
     void Start()
     { 
         controller = GetComponent<CharacterController> ();
+        startTime = Time.time;
     }
 
     // Update is called once per frame
@@ -24,7 +26,7 @@ public class PlayerMotor : MonoBehaviour
         if (isDead)
             return;
 
-        if (Time.time < animationDuration)
+        if (Time.time - startTime < animationDuration)
         {
             controller.Move (Vector3.forward * speed * Time.deltaTime);
             return;
