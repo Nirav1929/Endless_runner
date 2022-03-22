@@ -10,7 +10,7 @@ public class EnvironmentManager : MonoBehaviour
     private float spawnz = 0.0f;
     private float tileLength = 10.0f;
     private int TilesOnScreen = 7;
-    private float safeZone = 15.0f;
+    private float safeZone = 0.0f;
     private int lastPrefab = 0;
 
     private List<GameObject> activeTiles;
@@ -46,8 +46,8 @@ public class EnvironmentManager : MonoBehaviour
         else
             go = Instantiate(tilePrefabs[prefabIndex]) as GameObject;
         go.transform.SetParent (transform);
-        go.transform.position =  Vector3.forward * spawnz;
-        // go.transform.position = Vector3.right * 16.1f;
+
+        go.transform.position =  Vector3.Scale(Vector3.one,  new Vector3(16.1f, 0.0f, spawnz));
         spawnz += tileLength;
         activeTiles.Add(go);
     }
