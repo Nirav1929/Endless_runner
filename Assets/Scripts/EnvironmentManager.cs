@@ -7,10 +7,10 @@ public class EnvironmentManager : MonoBehaviour
 {
     public GameObject[] tilePrefabs; 
     private Transform platerTransform;
-    private float spawnz = 0.0f;
-    private float tileLength = 20.0f;
+private float spawnz = 0.0f;
+    private float tileLength = 10.0f;
     private int TilesOnScreen = 7;
-    private float safeZone = 0.0f;
+    private float safeZone = 30.0f;
     private int lastPrefab = 0;
 
     private List<GameObject> activeTiles;
@@ -24,6 +24,7 @@ public class EnvironmentManager : MonoBehaviour
             if (i<2)
                 SpawnTile(0);
             else
+            
                 SpawnTile();
         }       
     }

@@ -2,8 +2,8 @@ Unity Editor version:    2021.2.8f1 (d0e5f0a7b06a)
 Branch:                  2021.2/staging
 Build type:              Release
 Batch mode:              YES
-macOS version:           Version 12.2.1 (Build 21D62)
-Darwin version:          21.3.0
+macOS version:           Version 12.1 (Build 21C52)
+Darwin version:          21.2.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        8192 MB
@@ -18,13 +18,13 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
-/Users/salvation/Documents/Endless_runner
+/Users/nirav/Documents/Visual narratives/Endless/Endless_runner
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50540
-Successfully changed project path to: /Users/salvation/Documents/Endless_runner
-/Users/salvation/Documents/Endless_runner
+63333
+Successfully changed project path to: /Users/nirav/Documents/Visual narratives/Endless/Endless_runner
+/Users/nirav/Documents/Visual narratives/Endless/Endless_runner
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -54,11 +54,11 @@ Successfully changed project path to: /Users/salvation/Documents/Endless_runner
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 19.55 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 21.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.8f1 (d0e5f0a7b06a)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/salvation/Documents/Endless_runner/Assets
+[Subsystems] Discovering subsystems at path /Users/nirav/Documents/Visual narratives/Endless/Endless_runner/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
  preferred device: Apple M1 (high power)
 Metal devices available: 1
@@ -69,37 +69,37 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56181
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56447
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001002 seconds.
+Registered in 0.002099 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 19.77 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 20.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.351 seconds
+- Completed reload, in  0.374 seconds
 Domain Reload Profiling:
-	ReloadAssembly (351ms)
-		BeginReloadAssembly (63ms)
+	ReloadAssembly (374ms)
+		BeginReloadAssembly (74ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (241ms)
-			LoadAssemblies (63ms)
+		EndReloadAssembly (249ms)
+			LoadAssemblies (74ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (66ms)
+			SetupTypeCache (68ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (19ms)
-			SetupLoadedEditorAssemblies (129ms)
+			SetupLoadedEditorAssemblies (133ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (20ms)
+				RefreshPlugins (21ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (78ms)
+				ProcessInitializeOnLoadAttributes (81ms)
 				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -107,35 +107,35 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002124 seconds.
+Registered in 0.002851 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.18 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.502 seconds
+- Completed reload, in  0.473 seconds
 Domain Reload Profiling:
-	ReloadAssembly (503ms)
-		BeginReloadAssembly (49ms)
+	ReloadAssembly (473ms)
+		BeginReloadAssembly (53ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (12ms)
-		EndReloadAssembly (396ms)
-			LoadAssemblies (35ms)
+		EndReloadAssembly (360ms)
+			LoadAssemblies (39ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (113ms)
+			SetupTypeCache (109ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (171ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (162ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (123ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
+				BeforeProcessingInitializeOnLoad (26ms)
+				ProcessInitializeOnLoadAttributes (114ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -145,12 +145,12 @@ Platform modules already initialized, skipping
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.19 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.21 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1530 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (35.4 KB). Loaded Objects now: 1994.
-Memory consumption went from 155.0 MB to 155.0 MB.
-Total: 2.236625 ms (FindLiveObjects: 0.088417 ms CreateObjectMapping: 0.022541 ms MarkObjects: 2.063000 ms  DeleteObjects: 0.061917 ms)
+Unloading 1531 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (36.0 KB). Loaded Objects now: 1995.
+Memory consumption went from 155.6 MB to 155.6 MB.
+Total: 2.088833 ms (FindLiveObjects: 0.072541 ms CreateObjectMapping: 0.022084 ms MarkObjects: 1.939583 ms  DeleteObjects: 0.053958 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -164,49 +164,140 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 4852.085485 seconds.
-  path: Assets/Characters
-  artifactKey: Guid(d4793e2cfb9f3438e981f528fe762996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters using Guid(d4793e2cfb9f3438e981f528fe762996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85ca2075f7dcbf1e92db2a731838d553') in 0.002478 seconds 
+  Time since last request: 209715.345539 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Props_Street/Env_Type3_Tree_2.fbx
+  artifactKey: Guid(4ac378db2d54fc94d8fa99d5a64cf2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Props_Street/Env_Type3_Tree_2.fbx using Guid(4ac378db2d54fc94d8fa99d5a64cf2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f4eca4d7c0b560ebd943dbe29ac1ce0') in 0.268302 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.326357 seconds.
-  path: Assets/Characters/aj
-  artifactKey: Guid(30c0ed8636d7d4e07a7e22d63a674ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/aj using Guid(30c0ed8636d7d4e07a7e22d63a674ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '201c3bc033130363dde1b594aa9747c7') in 0.001469 seconds 
+  Time since last request: 0.000031 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Props_Street/Env_Type2_Tree_2.fbx
+  artifactKey: Guid(4e8dc89d0d89afa44946668e006902fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Props_Street/Env_Type2_Tree_2.fbx using Guid(4e8dc89d0d89afa44946668e006902fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9acf17a384f930eddf106b42ea4be983') in 0.008318 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.048492 seconds.
-  path: Assets/Characters/aj/aj@Jump.fbx
-  artifactKey: Guid(8d41e4806c0c74b05bee91738ae56024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/aj/aj@Jump.fbx using Guid(8d41e4806c0c74b05bee91738ae56024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e85c70f1f573c4b308da8ee837c08d16') in 0.192193 seconds 
+  Time since last request: 0.000041 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Props_Street/Props_Rocks_1.fbx
+  artifactKey: Guid(d0bebdd80e6456644a7c3dd004e55d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Props_Street/Props_Rocks_1.fbx using Guid(d0bebdd80e6456644a7c3dd004e55d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f7a99da0e0cf1bffb6ced815d55c06') in 0.009607 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Characters/aj/aj@Stumble Backwards.fbx
-  artifactKey: Guid(312848d474487418b9807cf692f9c2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/aj/aj@Stumble Backwards.fbx using Guid(312848d474487418b9807cf692f9c2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd72f05ee891f7c3900bed7b70682d000') in 0.004263 seconds 
+  Time since last request: 0.000066 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Props_Street/Env_Trash_Can_3.fbx
+  artifactKey: Guid(a55b2bcb378f69746946aeeb0b1ad9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Props_Street/Env_Trash_Can_3.fbx using Guid(a55b2bcb378f69746946aeeb0b1ad9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cfa385d4d6eb0f3f83155c4794b28f7') in 0.007071 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.530360 seconds.
-  path: Assets/Characters/aj/Jump.anim
-  artifactKey: Guid(75548b4ce16d04cb3bd6468b2cd9f417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/aj/Jump.anim using Guid(75548b4ce16d04cb3bd6468b2cd9f417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8923dff9d0da3a9a6f0d235514b88235') in 0.031575 seconds 
+  Time since last request: 0.000045 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Roads/Road_Home.fbx
+  artifactKey: Guid(cc9574e4675f36346a4f3ffc370536c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Roads/Road_Home.fbx using Guid(cc9574e4675f36346a4f3ffc370536c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c926b81314d34dad289c72e91646d14') in 0.011308 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.007641 seconds.
-  path: Assets/Characters/aj/Sad Idle.anim
-  artifactKey: Guid(e049c6bda691e424baea837a62229337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/aj/Sad Idle.anim using Guid(e049c6bda691e424baea837a62229337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e9fbe291ee3e80f2abd3dcd4b646767') in 0.004120 seconds 
+  Time since last request: 0.000081 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Roads/Road_Turn_90_1.fbx
+  artifactKey: Guid(5c99eabcda699324f97cd0f0851c1bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Roads/Road_Turn_90_1.fbx using Guid(5c99eabcda699324f97cd0f0851c1bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd271eaefb707540dbe6a086a48e3a992') in 0.012145 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.294761 seconds.
-  path: Assets/Characters/aj/Stumble Backwards.anim
-  artifactKey: Guid(147b159bf18884788981c7696ac19764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/aj/Stumble Backwards.anim using Guid(147b159bf18884788981c7696ac19764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c775c2f115b75b54fa2e62f04164361') in 0.011772 seconds 
+  Time since last request: 0.006367 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Roads/Road_With_Band_Half_Without_Border_2.fbx
+  artifactKey: Guid(64cf0d1b26b56494882dae7ceed064b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Roads/Road_With_Band_Half_Without_Border_2.fbx using Guid(64cf0d1b26b56494882dae7ceed064b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1d1fc7637e3735afcb98dba9b4579e') in 0.006824 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.594252 seconds.
-  path: Assets/Characters/aj/Standard Run.anim
-  artifactKey: Guid(067c06379182d430db21bb7c3fe338f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/aj/Standard Run.anim using Guid(067c06379182d430db21bb7c3fe338f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ebf638003a3d8dfe5c1da7db766c62a') in 0.004472 seconds 
+  Time since last request: 2.400064 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Props_Road/Env_Road_Sign_7.fbx
+  artifactKey: Guid(4a02f158a38dde74999d8bca87a2ed05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Props_Road/Env_Road_Sign_7.fbx using Guid(4a02f158a38dde74999d8bca87a2ed05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '736c5f8208db115b8631b96cfd785d19') in 0.040089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.990134 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Props_Road/Env_Road_Barrier.fbx
+  artifactKey: Guid(8b5b8b4cdc7d00448b0d907b81f49cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Props_Road/Env_Road_Barrier.fbx using Guid(8b5b8b4cdc7d00448b0d907b81f49cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c7cdaee0d6864cb6bb1185ca9489b3') in 0.014675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.049949 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Props_Street/Env_Playground_Fence.fbx
+  artifactKey: Guid(2634574e87d881444b0c81a722d15895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Props_Street/Env_Playground_Fence.fbx using Guid(2634574e87d881444b0c81a722d15895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fd315f1b77f5004ca1af6f7c452999') in 0.012481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.080448 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Props_Street/Env_Playground_4.fbx
+  artifactKey: Guid(80842223b7243614c83d14448a827d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Props_Street/Env_Playground_4.fbx using Guid(80842223b7243614c83d14448a827d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f299ae8c4b569c06875d2d567a835863') in 0.011019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.102781 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Models/BasicMotionsDummyModel.fbx
+  artifactKey: Guid(5917c0e93d180a842b61d1ebc62a195c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Models/BasicMotionsDummyModel.fbx using Guid(5917c0e93d180a842b61d1ebc62a195c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e67d881d66331b740ee4d61c9b5cf0') in 0.084204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.235623 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Cars/Car_Hatch.fbx
+  artifactKey: Guid(40ee9fa378804b34194c9f58f0c5931c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Cars/Car_Hatch.fbx using Guid(40ee9fa378804b34194c9f58f0c5931c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30dd0c5c35644c3d52f7045175828f3f') in 0.055809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.940716 seconds.
+  path: Assets/CubexCube - Free City Pack I/Models/Building/Bld_5_Floor_2_Porch_House_1.fbx
+  artifactKey: Guid(ba7238c5f77671545ae3fd713294fea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CubexCube - Free City Pack I/Models/Building/Bld_5_Floor_2_Porch_House_1.fbx using Guid(ba7238c5f77671545ae3fd713294fea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b0e7eec18cae7603d01a2d7a355430') in 0.016220 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000765 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x17fbaf000 may have been prematurely finalized
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.18 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.497 seconds
+Domain Reload Profiling:
+	ReloadAssembly (497ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (358ms)
+			LoadAssemblies (41ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (120ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (152ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (22ms)
+				ProcessInitializeOnLoadAttributes (109ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (21.9 KB). Loaded Objects now: 2008.
+Memory consumption went from 176.2 MB to 176.2 MB.
+Total: 2.053542 ms (FindLiveObjects: 0.067166 ms CreateObjectMapping: 0.021250 ms MarkObjects: 1.939167 ms  DeleteObjects: 0.024750 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
