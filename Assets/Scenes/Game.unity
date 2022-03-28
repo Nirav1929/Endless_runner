@@ -441,7 +441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePrefabs:
-  - {fileID: 1793715720}
+  - {fileID: 905456079833132275, guid: 02caeabb2cd0248f8abb7c909b8279e7, type: 3}
+  - {fileID: 4065165516482178248, guid: e433358e3bd4448c2972b33d8bb3a69c, type: 3}
 --- !u!4 &670263430
 Transform:
   m_ObjectHideFlags: 0
@@ -1316,11 +1317,6 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7254525913157095754, guid: eac86548458bd46799c82049a4caef76, type: 3}
   m_PrefabInstance: {fileID: 4183330192038530893}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1793715720 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 905456079833132275, guid: 02caeabb2cd0248f8abb7c909b8279e7, type: 3}
-  m_PrefabInstance: {fileID: 6219952832233277449}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1814526132
 GameObject:

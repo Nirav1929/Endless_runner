@@ -10,7 +10,7 @@ public class EnvironmentManager : MonoBehaviour
 private float spawnz = 0.0f;
     private float tileLength = 10.0f;
     private int TilesOnScreen = 7;
-    private float safeZone = 30.0f;
+    private float safeZone = 20.0f;
     private int lastPrefab = 0;
 
     private List<GameObject> activeTiles;
@@ -21,7 +21,7 @@ private float spawnz = 0.0f;
         platerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         for (int i=0; i<TilesOnScreen; i++)
         {
-            if (i<2)
+            if (i<3)
                 SpawnTile(0);
             else
             
