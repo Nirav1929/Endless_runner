@@ -1262,6 +1262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: aj@Standard Run
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33d4f276b3f9a416e8e57c7e4406288e, type: 3}
+      propertyPath: m_TagString
+      value: playerAnimation
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33d4f276b3f9a416e8e57c7e4406288e, type: 3}
 --- !u!1 &1697838213
@@ -1642,6 +1646,14 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7254525913148079826, guid: eac86548458bd46799c82049a4caef76, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 899c39263516e40bcaf9b774d136eeb9, type: 2}
+    - target: {fileID: 7254525913148079826, guid: eac86548458bd46799c82049a4caef76, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7254525913157095754, guid: eac86548458bd46799c82049a4caef76, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1684,6 +1696,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7254525913157095754, guid: eac86548458bd46799c82049a4caef76, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254525913157583250, guid: eac86548458bd46799c82049a4caef76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254525913157583272, guid: eac86548458bd46799c82049a4caef76, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7254525913157583274, guid: eac86548458bd46799c82049a4caef76, type: 3}

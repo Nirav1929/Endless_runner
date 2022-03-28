@@ -21,6 +21,7 @@ public class PlayerMotor : MonoBehaviour
         controller = GetComponent<CharacterController> ();
         startTime = Time.time;
         myAnimator = GetComponent<Animator> ();
+        myAnimator.SetBool("Grounded", true);
     }
 
     // Update is called once per frame
@@ -43,15 +44,18 @@ public class PlayerMotor : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 verticalVelocity = jumpForce;
+                myAnimator.SetBool("Grounded", false);
             }
             else{
                 verticalVelocity = -0.5f;
+    
             }
         }
 
         else 
         {
             verticalVelocity -= gravity * Time.deltaTime;
+            myAnimator.SetBool("Grounded", true);
         }
         // X - Left and Right
         moveVector.x = Input.GetAxisRaw("Horizontal") * speed;
@@ -67,7 +71,9 @@ public class PlayerMotor : MonoBehaviour
         else{
             Debug.Log("Animator is  Null");
         }
-        myAnimator.SetBool("Grounded", controller.isGrounded);
+
+        Debug.Log("This is the value" + myAnimator.GetBool("Grounded"));
+
     }
 
     public void SetSpeed (float modifier)
