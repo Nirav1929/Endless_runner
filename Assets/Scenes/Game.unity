@@ -443,6 +443,10 @@ MonoBehaviour:
   tilePrefabs:
   - {fileID: 905456079833132275, guid: 02caeabb2cd0248f8abb7c909b8279e7, type: 3}
   - {fileID: 4065165516482178248, guid: e433358e3bd4448c2972b33d8bb3a69c, type: 3}
+  - {fileID: 2055437351297145607, guid: 59a76c61890d748b7adcddc712d20f0d, type: 3}
+  - {fileID: 5793645029986925239, guid: cb1736d4eb5024abc866079ae317db66, type: 3}
+  - {fileID: 6477239182571897084, guid: fe6b300e7260d4c66a6d444c8c91e682, type: 3}
+  - {fileID: 8486818651820146554, guid: bf7c967303b2045fd84df86bea9b6f06, type: 3}
 --- !u!4 &670263430
 Transform:
   m_ObjectHideFlags: 0
