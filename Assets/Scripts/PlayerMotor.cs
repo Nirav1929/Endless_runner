@@ -8,16 +8,19 @@ public class PlayerMotor : MonoBehaviour
     private float speed = 5.0f;
     private Vector3 moveVector;
     private float verticalVelocity = 0.0f;
-    private float gravity = 12.0f;
+    public float gravity;
     private float animationDuration = 4.0f;
     private bool isDead = false;
     private float startTime;
+    public float jumpForce;
+    private Animator myAnimator;
     
     // Start is called before the first frame update
     void Start()
     { 
         controller = GetComponent<CharacterController> ();
         startTime = Time.time;
+        myAnimator = GetComponent<Animator> ();
     }
 
     // Update is called once per frame
@@ -32,10 +35,20 @@ public class PlayerMotor : MonoBehaviour
             return;
         }
         moveVector = Vector3.zero;
+
+        
+        
         if (controller.isGrounded)
         {
-            verticalVelocity = -0.5f;
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                verticalVelocity = jumpForce;
+            }
+            else{
+                verticalVelocity = -0.5f;
+            }
         }
+
         else 
         {
             verticalVelocity -= gravity * Time.deltaTime;
@@ -47,6 +60,14 @@ public class PlayerMotor : MonoBehaviour
         // Z - Forward and Backword
         moveVector.z = speed;
         controller.Move(moveVector * Time.deltaTime);
+        if (myAnimator!= null)
+        {
+            Debug.Log("Animator is not Null");
+        }
+        else{
+            Debug.Log("Animator is  Null");
+        }
+        myAnimator.SetBool("Grounded", controller.isGrounded);
     }
 
     public void SetSpeed (float modifier)
@@ -72,4 +93,5 @@ public class PlayerMotor : MonoBehaviour
         isDead = true;
         GetComponent<Score>().OnDeath();
     }
+
 }
