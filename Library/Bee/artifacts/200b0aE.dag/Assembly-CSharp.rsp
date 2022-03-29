@@ -330,6 +330,8 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Clock/Scripts/Clock.cs"
 "Assets/Scripts/CameraMotor.cs"
+"Assets/Scripts/CameraShake.cs"
+"Assets/Scripts/CollectShake.cs"
 "Assets/Scripts/DeathMenu.cs"
 "Assets/Scripts/EnvironmentManager.cs"
 "Assets/Scripts/MainMenu.cs"
