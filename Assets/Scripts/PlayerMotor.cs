@@ -89,7 +89,7 @@ public class PlayerMotor : MonoBehaviour
     // Called everytime player hits something
     private void OnControllerColliderHit(ControllerColliderHit hit) {
         
-        if (hit.moveDirection.z == 1 && hit.point.z > transform.position.z + controller.radius)
+        if (hit.moveDirection.z == 1 && hit.point.z > transform.position.z +0.1f)
         {
             Debug.Log("I'm colliding with this collider: " + hit.collider.name);
             Debug.Log("I'm colliding with this controller: " + hit.controller);
