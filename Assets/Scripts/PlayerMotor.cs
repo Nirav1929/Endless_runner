@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMotor : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PlayerMotor : MonoBehaviour
     private float startTime;
     public float jumpForce;
     private Animator myAnimator;
+    public float multiplier = 1.0f;
+    public Text speedText;
     
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,7 @@ public class PlayerMotor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        speedText.text ="Speed "  + multiplier.ToString() + "x";
         if (isDead)
             return;
 
@@ -79,6 +83,7 @@ public class PlayerMotor : MonoBehaviour
     public void SetSpeed (float modifier)
     {
         speed = 5.0f + modifier;
+        multiplier = modifier;
     }
 
     // Called everytime player hits something
@@ -94,7 +99,8 @@ public class PlayerMotor : MonoBehaviour
             if (hit.collider.name == "Speed") {
                 GameObject.Find("default_audio").GetComponent<AudioSource>().Pause();
                 GameObject.Find("ms_audio").GetComponent<AudioSource>().Play();
-                GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeCamera();
+                multiplier ++;
+                SetSpeed(multiplier);
                 StartCoroutine(switchAudio("default_audio", "ms_audio"));
             } else if (hit.collider.name == "Shield") {
                 GameObject.Find("default_audio").GetComponent<AudioSource>().Pause();
@@ -107,13 +113,12 @@ public class PlayerMotor : MonoBehaviour
                 GameObject.Find("ms_audio").GetComponent<AudioSource>().Play();
                 GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeCamera();
                 StartCoroutine(switchAudio("default_audio", "ms_audio"));
-            } else {
-                hit.gameObject.transform.position = Vector3.zero;
-                Death ();
-            }
-
+            } else if (hit.gameObject.CompareTag("Obstacle"))
+                Death();
             hit.collider.gameObject.SetActive(false);
+
         }
+
     }
 
     System.Collections.IEnumerator switchAudio(string start, string stop) {

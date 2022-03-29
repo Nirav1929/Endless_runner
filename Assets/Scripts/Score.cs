@@ -31,12 +31,13 @@ public class Score : MonoBehaviour
             return;
         scoreToNextLevel *= 2;
         difficultyLevel ++;
-        GetComponent<PlayerMotor>().SetSpeed (difficultyLevel);
+        GetComponent<PlayerMotor>().SetSpeed(difficultyLevel);
     }
 
     public void OnDeath()
     {
         isDead = true;
+        PlayerPrefs.SetFloat("", score);
         deathMenu.ToggleEndMenu(score);
     }
 }
