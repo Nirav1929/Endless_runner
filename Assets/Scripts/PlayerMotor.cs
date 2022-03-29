@@ -64,15 +64,15 @@ public class PlayerMotor : MonoBehaviour
         // Z - Forward and Backword
         moveVector.z = speed;
         controller.Move(moveVector * Time.deltaTime);
-        if (myAnimator!= null)
-        {
-            Debug.Log("Animator is not Null");
-        }
-        else{
-            Debug.Log("Animator is  Null");
-        }
+        // if (myAnimator!= null)
+        // {
+        //     Debug.Log("Animator is not Null");
+        // }
+        // else{
+        //     Debug.Log("Animator is  Null");
+        // }
 
-        Debug.Log("This is the value" + myAnimator.GetBool("Grounded"));
+        // Debug.Log("This is the value" + myAnimator.GetBool("Grounded"));
 
     }
 
@@ -86,11 +86,21 @@ public class PlayerMotor : MonoBehaviour
         
         if (hit.moveDirection.z == 1 && hit.point.z > transform.position.z + controller.radius)
         {
+            Debug.Log("I'm colliding with this collider: " + hit.collider.name);
+            Debug.Log("I'm colliding with this controller: " + hit.controller);
             Debug.Log("I'm colliding with: " + hit.transform.name);
             Debug.Log("I impacted at: " + hit.point);
             Debug.Log(hit.moveDirection);
-            hit.gameObject.transform.position = Vector3.zero;            
-            Death ();
+            if (hit.collider.name == "Speed") {
+                GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeCamera();
+            } else if (hit.collider.name == "Shield") {
+                GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeCamera();
+            } else if (hit.collider.name == "Damage") {
+                GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeCamera();
+            } else {
+                hit.gameObject.transform.position = Vector3.zero;
+                Death ();
+            }
         }
     }
 
