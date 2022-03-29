@@ -6,11 +6,11 @@ public class CollectShake : MonoBehaviour
 {
     void OnTriggerEnter (Collider other){
         // cameraScript = GameObject.Find("MainCamera").GetComponent(CameraShake);
-        GameObject go = GameObject.Find("MainCamera");
+        GameObject go = GameObject.Find("Main Camera");
         CameraShake ot = (CameraShake) go.GetComponent(typeof(CameraShake));
 
         // cameraScript = GameObject.FindObjectOfType(typeof(CameraShake)) as CameraShake;
-        // Debug.Log("I'm colliding with: " + cameraScript);
+        Debug.Log("This is Awesome");
         ot.shakeCamera();
         this.gameObject.SetActive(false);
     }

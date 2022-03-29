@@ -97,10 +97,13 @@ public class PlayerMotor : MonoBehaviour
                 GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeCamera();
             } else if (hit.collider.name == "Damage") {
                 GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeCamera();
+                
             } else {
                 hit.gameObject.transform.position = Vector3.zero;
                 Death ();
             }
+
+            hit.collider.gameObject.SetActive(false);
         }
     }
 

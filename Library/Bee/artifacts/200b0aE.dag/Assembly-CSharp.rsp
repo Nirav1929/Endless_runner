@@ -334,6 +334,7 @@
 "Assets/Scripts/CollectShake.cs"
 "Assets/Scripts/DeathMenu.cs"
 "Assets/Scripts/EnvironmentManager.cs"
+"Assets/Scripts/LightFlickerEffect.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/PlayerMotor.cs"
 "Assets/Scripts/Score.cs"
