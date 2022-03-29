@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerMotor : MonoBehaviour
 {
@@ -86,11 +87,14 @@ public class PlayerMotor : MonoBehaviour
         
         if (hit.moveDirection.z == 1 && hit.point.z > transform.position.z + controller.radius)
         {
+
+ 
             Debug.Log("I'm colliding with: " + hit.transform.name);
+            Debug.Log("I'm colliding with: " + hit.transform.tag);
             Debug.Log("I impacted at: " + hit.point);
             Debug.Log(hit.moveDirection);
-            hit.gameObject.transform.position = Vector3.zero;            
-            Death ();
+            if (hit.gameObject.CompareTag("Obstacle"))
+                Death ();
         }
     }
 

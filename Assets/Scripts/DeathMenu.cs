@@ -23,7 +23,7 @@ public class DeathMenu : MonoBehaviour
         if (!isShown)
             return;
         transition += Time.deltaTime;
-        backgroundImage.color =  Color.Lerp (new Color (0,0,0,0), Color.black, transition);
+        backgroundImage.color =  Color.Lerp(new Color(0, 0, 0), Color.black, transition);
     }
 
     public void ToggleEndMenu (float score)
