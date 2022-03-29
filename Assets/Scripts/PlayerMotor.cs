@@ -94,7 +94,8 @@ public class PlayerMotor : MonoBehaviour
             if (hit.collider.name == "Speed") {
                 GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeCamera();
             } else if (hit.collider.name == "Shield") {
-                GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeCamera();
+                GameObject.Find("Directional Light").GetComponent<LightFlickerEffect>().enabled = true;
+                GameObject.Find("Directional Light").GetComponent<LightFlickerEffect>().LightControl();
             } else if (hit.collider.name == "Damage") {
                 GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeCamera();
                 
