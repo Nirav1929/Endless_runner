@@ -92,13 +92,21 @@ public class PlayerMotor : MonoBehaviour
             Debug.Log("I impacted at: " + hit.point);
             Debug.Log(hit.moveDirection);
             if (hit.collider.name == "Speed") {
+                GameObject.Find("default_audio").GetComponent<AudioSource>().Pause();
+                GameObject.Find("ms_audio").GetComponent<AudioSource>().Play();
                 GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeCamera();
+                StartCoroutine(switchAudio("default_audio", "ms_audio"));
             } else if (hit.collider.name == "Shield") {
+                GameObject.Find("default_audio").GetComponent<AudioSource>().Pause();
+                GameObject.Find("ms_audio").GetComponent<AudioSource>().Play();
                 GameObject.Find("Directional Light").GetComponent<LightFlickerEffect>().enabled = true;
                 GameObject.Find("Directional Light").GetComponent<LightFlickerEffect>().LightControl();
+                StartCoroutine(switchAudio("default_audio", "ms_audio"));
             } else if (hit.collider.name == "Damage") {
+                GameObject.Find("default_audio").GetComponent<AudioSource>().Pause();
+                GameObject.Find("ms_audio").GetComponent<AudioSource>().Play();
                 GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeCamera();
-                
+                StartCoroutine(switchAudio("default_audio", "ms_audio"));
             } else {
                 hit.gameObject.transform.position = Vector3.zero;
                 Death ();
@@ -108,8 +116,16 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
+    System.Collections.IEnumerator switchAudio(string start, string stop) {
+        yield return new WaitForSeconds(0.5F + GameObject.Find("Main Camera").GetComponent<CameraShake>().shakeTime);
+        GameObject.Find(stop).GetComponent<AudioSource>().Pause();
+        GameObject.Find(start).GetComponent<AudioSource>().Play();
+    }
+
     private void Death ()
     {
+        GameObject.Find("default_audio").GetComponent<AudioSource>().Pause();
+        GameObject.Find("ms_audio").GetComponent<AudioSource>().Play();
         isDead = true;
         GetComponent<Score>().OnDeath();
     }
